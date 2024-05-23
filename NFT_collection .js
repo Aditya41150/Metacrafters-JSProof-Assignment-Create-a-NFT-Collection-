@@ -27,20 +27,20 @@ function mintNFT (name,color,speed,horespower,price) {
         "HorsePower":horespower,
         "Price":price
     }
-    noNft.push(metaData)
+    noOfNft.push(metaData)
 }
 
 // create a "loop" that will go through an "array" of NFT's
 // and print their metadata with console.log()
 function listNFTs () {
-    for(let i=0 ; i<noNft.length ; i++)
+    for(let i=0 ; i<noOfNft.length ; i++)
         {
             
-            console.log("CAR NAME:"+noNft[i].Name);
-            console.log("CAR COLOR:"+ noNft[i].Color);
-            console.log("CAR SPEED:"+ noNft[i].Speed);
-            console.log("HORSE POWER:" + noNft[i].HorsePower);
-            console.log("PRICE:"+ noNft[i].Price);
+            console.log("CAR NAME:"+noOfNft[i].Name);
+            console.log("CAR COLOR:"+ noOfNft[i].Color);
+            console.log("CAR SPEED:"+ noOfNft[i].Speed);
+            console.log("HORSE POWER:" + noOfNft[i].HorsePower);
+            console.log("PRICE:"+ noOfNft[i].Price);
             console.log("--------------------")
             
         }
@@ -49,7 +49,7 @@ function listNFTs () {
 
 // print the total number of NFTs we have minted to the console
 function getTotalSupply() {
-    console.log("Total number of NFT's Created:"+ noNft.length)
+    console.log("Total number of NFT's Created:"+ noOfNft.length)
 }
 
 // call your functions below this line
