@@ -17,7 +17,7 @@ Assessment Requirements
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
 
-const noNft = [];
+const noOfNft = [];
 
 function mintNFT (name,color,speed,horespower,price) {
     const metaData = {
